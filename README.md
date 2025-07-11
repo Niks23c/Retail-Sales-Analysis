@@ -64,7 +64,7 @@ RLS is implemented to restrict data visibility based on user roles (e.g., Czech,
 |---------------|----------------|-----------|------------------|----------------------------------|
 | Czech         | Country        | Equals    | Czech Republic   | ✔️ Working correctly              |
 | Denmark       | Country        | Equals    | Denamrk     | ✔️ Working correctly              |
-| Germany role  | Country        | Equals    | Germany          | ✔️ Valid and working              |
+| Germany       | Country        | Equals    | Germany          | ✔️ Valid and working              |
 
 📸 **Screenshots of RLS setup**  
 | Czech Role | Denmark Role  | View as Role | 
