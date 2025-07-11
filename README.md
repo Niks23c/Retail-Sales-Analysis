@@ -3,7 +3,32 @@
 A one-page dynamic Power BI dashboard that delivers advanced retail sales insights using multiple data sources and row-level security (RLS) logic. Built to support Quarterly Business Review (QBR) presentations with deep visual storytelling.
 
 ---
+# ❗ Problem Statement 
+   Retail business has raw sales data but lacks clarity on performance insights
 
+   No visual system exists to monitor KPIs or identify sales patterns
+
+   Management struggles with understanding product and customer trends
+
+   Need for a centralized Power BI dashboard for actionable insights
+
+   
+   Goal: Drive better decision-making in sales, marketing, and inventory
+
+# 🧠 BRD Questions 
+What are the total sales, profit, and quantity sold over time?
+
+Which products/categories generate the most revenue and profit?
+
+How do sales differ by customer type (e.g., new vs returning)?
+
+Which regions or cities perform best and worst in terms of sales?
+
+What are the monthly/weekly/daily sales trends?
+
+Who are the most valuable customers based on buying behavior?
+
+Are there any peak sales periods or seasonal patterns?
 
 🎞️ **Live Dashboard Demo (GIF)**  
 ![Retail Sales Dashboard GIF](images/dashboard.gif)
