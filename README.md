@@ -1,31 +1,81 @@
-🛍️ Retail Sales Analysis (Power BI Dashboard)
-This Power BI dashboard provides comprehensive sales insights in a single-page report, built using multiple data sources including Sales, Product, Geography, Sales Representatives, Categories, and Subcategories.
+# 🛍️ Retail Sales Analysis (Power BI Dashboard)
 
-🔍 Key Highlights
-Data Integration: Automatically loads yearly sales data from a folder using a dynamic Power Query setup that handles file additions/removals gracefully.
+A one-page dynamic Power BI dashboard that delivers advanced retail sales insights using multiple data sources and row-level security (RLS) logic. Built to support Quarterly Business Review (QBR) presentations with deep visual storytelling.
 
-Data Modeling: Includes custom transformations like splitting Location into Country and City, cleaning up ID fields, and creating relationships using a proper calendar table.
+---
 
-DAX Measures: Calculates Total Revenue, Total Cost, Gross Profit, MoM Growth %, and Average Sales Per Day.
+## 📊 Dashboard Preview
 
-Visual Analysis:
+![Retail Sales Dashboard](assets/Screenshots/dashboard.png)
 
-QoQ Sales Growth
+🎞️ **Live Dashboard Demo (GIF)**  
+![Retail Sales Dashboard GIF](assets/Retail_Sales_Dashboard.gif)
 
-Monthly performance trends
+---
 
-Product drop/increase trends
+## 🔐 Row-Level Security (RLS)
 
-Geo-based sales performance
+RLS is implemented to restrict data visibility based on user roles (e.g., Czech, Denmark, Germany).
 
-Purpose: Designed for Quarterly Business Review (QBR) to support strategic decision-making with high-level KPIs and breakdowns.
+### ✅ Configured Roles:
 
-🧰 Tools Used
-Power BI (DAX, Power Query)
+| Role Name     | Filter Column | Condition | Value           | Notes                            |
+|---------------|----------------|-----------|------------------|----------------------------------|
+| Czech         | Country        | Equals    | Czech Republic   | ✔️ Working correctly              |
+| Denmark       | Country        | Equals    | **Denamrk**      | ✔️ Working correctly              |
+| Germany role  | Country        | Equals    | Germany          | ✔️ Valid and working              |
 
-Excel / CSV for data input
+📸 **Screenshots of RLS setup**  
+| Czech Role | Denmark Role (Typo) | View as Role |
+|------------|---------------------|----------------|
+| ![](assets/Row%20level%20security1.png) | ![](assets/Row%20level%20security2.png) | ![](assets/Security1.png) |
 
-Data modeling with star schema
+---
 
-📸 Preview
-Include a screenshot of your dashboard here for visual impact (e.g., Screenshots/dashboard.png).
+## 📈 Key Features
+
+### 📌 Visual Highlights
+
+- Quarterly Sales Growth (QoQ)
+- Monthly Trend Analysis
+- Product Drop/Increase Trends
+- Geo-wise Sales Visualization
+- Category/Subcategory Breakdown
+- Interactive Scroll Navigation
+
+### 🧮 DAX Measures
+
+- **Total Revenue** = Units × Retail Price  
+- **Total Cost** = Units × Standard Cost  
+- **Gross Profit** = Total Revenue − Total Cost  
+- **MoM Growth %** = Gross Profit Change  
+- **Average Sales/Day** = Revenue divided by active days  
+- **QoQ Growth** (Time intelligence)
+
+---
+
+## 🧰 Tools Used
+
+- **Power BI Desktop** (DAX, RLS, Power Query)
+- **Power Query** for data transformations
+- **Star Schema** for data modeling
+- **Excel & CSV** as data sources
+
+---
+
+## 📝 Functional Scope (Based on BRD)
+
+✅ Load yearly Sales files dynamically using folder query  
+✅ Split "Location" column into Country & City  
+✅ Clean SalesRep & SubCategory ID columns using reusable Power Query function  
+✅ Generate and use `GeoKey` for proper table joins  
+✅ Use Calendar table for time intelligence  
+✅ Implement QoQ Growth & MoM Growth measures  
+✅ Ensure months sort from Jan to Dec  
+
+📄 **View Full BRD Document:** [BRD For Retail Sales (1).docx](./BRD%20For%20Retail%20Sales%20(1).docx)
+
+---
+
+## 📂 Project Structure
+
