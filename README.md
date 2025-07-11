@@ -14,7 +14,8 @@ A one-page dynamic Power BI dashboard that delivers advanced retail sales insigh
 
    
    Goal: Drive better decision-making in sales, marketing, and inventory
-
+   
+---
 # 🧠 BRD Questions 
 What are the total sales, profit, and quantity sold over time?
 
@@ -30,6 +31,24 @@ Who are the most valuable customers based on buying behavior?
 
 Are there any peak sales periods or seasonal patterns?
 
+---
+# 🧾 Project Objective
+
+Analyze a retail store's transactional sales data using Power BI
+
+Identify trends in sales performance, customer behavior, and product categories
+
+Create DAX measures to calculate KPIs like total sales, profit, and quantity sold
+
+Develop interactive dashboards for dynamic filtering and visual exploration
+
+Support data-driven decision-making in sales, marketing, and inventory
+
+Highlight top-performing products, key regions, and customer segments
+
+Enable the business to optimize pricing, stock levels, and promotional strategies
+
+---
 🎞️ **Live Dashboard Demo (GIF)**  
 ![Retail Sales Dashboard GIF](images/dashboard.gif)
 
@@ -44,7 +63,7 @@ RLS is implemented to restrict data visibility based on user roles (e.g., Czech,
 | Role Name     | Filter Column | Condition | Value           | Notes                            |
 |---------------|----------------|-----------|------------------|----------------------------------|
 | Czech         | Country        | Equals    | Czech Republic   | ✔️ Working correctly              |
-| Denmark       | Country        | Equals    | **Denamrk**      | ✔️ Working correctly              |
+| Denmark       | Country        | Equals    | Denamrk     | ✔️ Working correctly              |
 | Germany role  | Country        | Equals    | Germany          | ✔️ Valid and working              |
 
 📸 **Screenshots of RLS setup**  
