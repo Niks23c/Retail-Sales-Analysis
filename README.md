@@ -4,12 +4,9 @@ A one-page dynamic Power BI dashboard that delivers advanced retail sales insigh
 
 ---
 
-## 📊 Dashboard Preview
-
-![Retail Sales Dashboard](assets/Screenshots/dashboard.png)
 
 🎞️ **Live Dashboard Demo (GIF)**  
-![Retail Sales Dashboard GIF](assets/Retail_Sales_Dashboard.gif)
+![Retail Sales Dashboard GIF](images/dashboard.gif)
 
 ---
 
@@ -26,9 +23,9 @@ RLS is implemented to restrict data visibility based on user roles (e.g., Czech,
 | Germany role  | Country        | Equals    | Germany          | ✔️ Valid and working              |
 
 📸 **Screenshots of RLS setup**  
-| Czech Role | Denmark Role (Typo) | View as Role |
+| Czech Role | Denmark Role  | View as Role |
 |------------|---------------------|----------------|
-| ![](assets/Row%20level%20security1.png) | ![](assets/Row%20level%20security2.png) | ![](assets/Security1.png) |
+| ![](images/Rls1.png) | ![](images/Rls2.png) | ![](images/Rls3.png) | ![](images/Denmarkview.png) |
 
 ---
 
