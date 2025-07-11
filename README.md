@@ -121,5 +121,4 @@ RLS is implemented to restrict data visibility based on user roles (e.g., Czech,
 
 ---
 
-## 📂 Project Structure
 
